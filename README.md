@@ -29,7 +29,7 @@
 <details>
 <summary><b>2. スペルミスによるイメージ名の修正（docker tag を活用）</b></summary>
 
-*   **現象:** `docker build` 時のスペルミスで、型が `ailio-alpine`（`k` が `l`）という名前で登録されてしまい、大正解の名前で `run` しようとするとエラーになった。
+*   **現象:** `docker build` 時のスペルミスで、型が `ailio-alpine`（`k` が `l`）という名前で登録されてしまい、意図していた名前`aikio-alpine`で `run` しようとするとエラーになった。
 *   **原因:** Dockerの型は上書き変更（`mv` のような操作）ができない。
 *   **解決:**  `docker tag ailio-alpine aikio-alpine` を実行。中身のデータを複製することなく、新しい正しい名札（タグ）だけをペタッと貼り直す仕様を学び、古い型は `docker rmi` で削除した。
 
