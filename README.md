@@ -31,7 +31,7 @@
 
 *   **現象:** `docker build` 時のスペルミスで、型が `ailio-alpine`（`k` が `l`）という名前で登録されてしまい、意図していた名前`aikio-alpine`で `run` しようとするとエラーになった。
 *   **原因:** Dockerの型は上書き変更（`mv` のような操作）ができない。
-*   **解決:**  `docker tag ailio-alpine aikio-alpine` を実行。中身のデータを複製することなく、新しい正しい名札（タグ）だけをペタッと貼り直す仕様を学び、古い型は `docker rmi` で削除した。
+*   **解決:**  `docker tag ailio-alpine aikio-alpine` を実行。中身のデータを複製することなく、新しい正しい名札（タグ）だけをペタッと貼り直す仕様を学び、古い型の名札は `docker rmi` で削除した。
 
 </details>
 
