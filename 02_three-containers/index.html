@@ -1,1 +1,34 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>ステップ3：合体実験</title>
+</head>
+<body>
+    <h1>フロントエンドとバックエンドの合体大実験！</h1>
 
+    <!-- 1. このボタンを押したら、Python厨房へデータを注文しにいく -->
+    <button onclick="getPythonData()">Python厨房へ注文を入れる！</button>
+
+    <!-- 2. Pythonから届いた文字を、ここにパッと表示させる場所 -->
+    <p id="result-text" style="color: blue; font-weight: bold;"></p>
+
+    <script>
+        function getPythonData() {
+            // 3. fetch（フェッチ）の魔法を使って、5000番ポートのPythonをピンポーンと鳴らす
+            fetch('/api/data')
+                .then(response => response.json())
+                .then(data => {
+                    // 4. 無事に届いたら、画面の文字をPythonのメッセージに書き換える
+                    document.getElementById('result-text').innerText = data.message;
+                })
+                .catch(error => {
+                    // 5. もし通信が失敗したら、赤い文字でエラーを出す
+                    document.getElementById('result-text').style.color = 'red';
+                    document.getElementById('result-text').innerText = '通信エラーが起きたぞ！';
+                    console.error('エラーの詳細:', error);
+                });
+        }
+    </script>
+</body>
+</html>
