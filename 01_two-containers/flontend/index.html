@@ -1,1 +1,33 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>マルチコンテナ実験サイト</title>
+</head>
+<body>
+    <h1>マルチコンテナ（Nginx × Python）の大実験</h1>
+    <p>下のボタンを押すと、フロントエンド（Nginx）からバックエンド（Python）へ裏で通信を飛ばします！</p>
 
+    <!--  クリックするとPythonを呼び出すボタン -->
+    <button onclick="fetchFromBackend()">Python厨房へ注文を入れる！</button>
+
+    <!--  返ってきた結果を表示する場所 -->
+    <h3 id="result" style="color: blue;">ボタンを押すとここに結果が出るよ</h3>
+
+    <script>
+        async function fetchFromBackend() {
+            try {
+                // 後でComposeが繋いでくれる「/api/data」の住所へ裏で注文を飛ばす！
+                const response = await fetch('/api/data');
+                const data = await response.json();
+
+                // 画面の文字をPythonから返ってきた文字（message）に書き換える！
+                document.getElementById('result').innerText = data.message;
+            } catch (error) {
+                document.getElementById('result').innerText = "通信エラー！バックエンドが動いてないかも？";
+                console.error(error);
+            }
+        }
+    </script>
+</body>
+</html>
