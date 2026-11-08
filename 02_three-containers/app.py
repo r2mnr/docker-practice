@@ -14,7 +14,7 @@ class User(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String(50), nullable=False)
 
-# 💡 【本質】前回の呼び鈴（URL）はそのまま生かす！
+#  呼び鈴（URL）
 @app.route('/api/data')
 def send_message():
     try:
@@ -31,7 +31,7 @@ def send_message():
 
 if __name__ == '__main__':
 
-    # 💡 起動したあと、MySQLが完全に起きるまで5秒だけ待ってあげる！
+    #  起動したあと、MySQLが完全に起きるまで5秒だけ待ってあげる！
     print("MySQL倉庫の開店を待っています...")
     time.sleep(5)
 
