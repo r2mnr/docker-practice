@@ -13,6 +13,22 @@ Ubuntu 26.04.1 LTS
 
 Docker 29.9.2
 
+
+## 📁 フォルダ構成 (Directory Structure)
+
+本プロジェクトのファイルおよびディレクトリの配置は以下の通りです。
+
+```text
+01_two-containers/            # プロジェクトのルートディレクトリ
+├── docker-compose.yml          # Docker Compose設定ファイル
+├── Dockerfile                  # Nginx用のDockerfile
+├── default.conf                # Nginxの設定ファイル
+├── index.html                  # フロントエンドの画面ファイル
+└── back-end/                   # バックエンド用ディレクトリ
+    ├── Dockerfile              # Flask用のDockerfile
+    └── app.py                  # Flask（Python）のメインプログラム
+```
+
 ## システム構成
 
 本プロジェクトでは、以下の2つのコンテナを使用しています。
