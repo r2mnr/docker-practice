@@ -22,12 +22,9 @@ Docker 29.9.2
 ```text
 02_three-containers/            # プロジェクトのルートディレクトリ
 ├── docker-compose.yml          # Docker Compose設定ファイル
-├── Dockerfile                  # Nginx用のDockerfile
+├── app.py                      # Flask（Python）のメインプログラム
 ├── default.conf                # Nginxの設定ファイル
 ├── index.html                  # フロントエンドの画面ファイル
-└── back-end/                   # バックエンド用ディレクトリ
-    ├── Dockerfile              # Flask用のDockerfile
-    └── app.py                  # Flask（Python）のメインプログラム
 ```
 
 
