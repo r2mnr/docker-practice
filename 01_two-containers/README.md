@@ -24,7 +24,7 @@ Docker 29.9.2
 ├── Dockerfile                  # Nginx用のDockerfile
 ├── default.conf                # Nginxの設定ファイル
 ├── index.html                  # フロントエンドの画面ファイル
-└── back-end/                   # バックエンド用ディレクトリ
+└── backend-app                 # バックエンド用ディレクトリ
     ├── Dockerfile              # Flask用のDockerfile
     └── app.py                  # Flask（Python）のメインプログラム
 ```
