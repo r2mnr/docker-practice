@@ -20,7 +20,7 @@ Docker 29.9.2
 本プロジェクトのファイルおよびディレクトリの配置は以下の通りです。
 
 ```text
-practice/                       # プロジェクトのルートディレクトリ
+02_three-containers/            # プロジェクトのルートディレクトリ
 ├── docker-compose.yml          # Docker Compose設定ファイル
 ├── Dockerfile                  # Nginx用のDockerfile
 ├── default.conf                # Nginxの設定ファイル
