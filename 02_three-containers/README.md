@@ -103,6 +103,8 @@ Flask側では、起動時に必要なPythonライブラリをインストール
 cd 02_three-containers
 ```
 
+各4つのファイルを`nano`で作成します
+
 Docker Composeで起動します。
 
 ```bash
