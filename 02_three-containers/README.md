@@ -20,18 +20,16 @@ Docker 29.9.2
 本プロジェクトのファイルおよびディレクトリの配置は以下の通りです。
 
 ```text
-.
-├── compose.yaml            # Docker Composeの設定ファイル
-├── nginx/
-│   ├── nginx.conf          # Nginxの設定ファイル
-│   └── html/
-│       └── index.html      # 静的HTMLファイル（フロント画面）
-├── flask/
-│   ├── app.py              # Flask（Python）のメインスクリプト
-│   └── requirements.txt    # Pythonの依存パッケージリスト
-└── mysql/
-    └── init.sql            # データベース初期化用SQL（ある場合）
+practice/                       # プロジェクトのルートディレクトリ
+├── docker-compose.yml          # Docker Compose設定ファイル
+├── Dockerfile                  # Nginx用のDockerfile
+├── default.conf                # Nginxの設定ファイル
+├── index.html                  # フロントエンドの画面ファイル
+└── back-end/                   # バックエンド用ディレクトリ
+    ├── Dockerfile              # Flask用のDockerfile
+    └── app.py                  # Flask（Python）のメインプログラム
 ```
+
 
 
 ## システム構成
