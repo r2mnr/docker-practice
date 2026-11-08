@@ -119,6 +119,12 @@ docker compose down
 
 Flaskから返されたJSON形式のデータがブラウザに表示されることを確認しました。
 
+ブラウザからは、Nginxのホスト側ポートを利用してアクセスします。
+
+```text
+http://localhost:/
+```
+
 ## 構築中に発生した問題と対応
 
 ### 1. NginxからFlaskのサービスを名前解決できない
