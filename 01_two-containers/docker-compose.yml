@@ -1,0 +1,14 @@
+version: "3"
+
+services:
+  # 🌐 1部屋目：フロントエンド（案内所）
+  front-web:
+    build: .
+    ports:
+      - "80:80"
+    depends_on: #「先にback-appを建ててから自分を起動」という命令
+      - back-app
+
+  # 🐍 2部屋目：バックエンド（Python厨房）
+  back-app:
+    build: ./backend-app
