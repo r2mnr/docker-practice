@@ -12,6 +12,7 @@ Docker Composeを使用して、Nginx・Python Flask・MySQLの3つを連携さ�
 
 ### 動作環境
 Ubuntu 26.04.1 LTS
+
 Docker 29.9.2
 
 ## システム構成
