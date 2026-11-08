@@ -54,7 +54,7 @@ Linuxではファイル名の大文字・小文字が区別されることを再
 - **解決：** `docker tag` を使って正しい名前のタグを付け直しました。
 
 ```bash
-docker tag aikio-alpine aikio-alpine
+docker tag ailio-alpine aikio-alpine
 ```
 
 ※実際のコマンドではイメージ名を正確に指定します。
