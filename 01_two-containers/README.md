@@ -14,7 +14,7 @@ Ubuntu 26.04.1 LTS
 Docker 29.9.2
 
 
-## 📁 フォルダ構成 (Directory Structure)
+## フォルダ構成 (Directory Structure)
 
 本プロジェクトのファイルおよびディレクトリの配置は以下の通りです。
 
