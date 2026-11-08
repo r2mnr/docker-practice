@@ -103,20 +103,6 @@ Flask側では、起動時に必要なPythonライブラリをインストール
 cd 02_three-containers
 ```
 
-各4つのファイルを作成します
-```bash
-nano app.py
-```
-```bash
-nano default.conf
-```
-```bash
-nano docker-compose.yml
-```
-```bash
-nano index.html
-```
-
 Docker Composeで起動します。
 
 ```bash
