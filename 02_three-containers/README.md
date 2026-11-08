@@ -10,7 +10,7 @@ Docker Composeを使用して、Nginx・Python Flask・MySQLの3つを連携さ�
 
 本プロジェクトでは、Dockerfileを使用せず、Docker Compose内で既存のイメージを指定して構築しています。
 
-# 動作環境
+### 動作環境
 Ubuntu 26.04.1 
 
 ## システム構成
