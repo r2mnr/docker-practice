@@ -24,7 +24,7 @@ Docker 29.9.2
 ├── docker-compose.yml          # Docker Compose設定ファイル
 ├── app.py                      # Flask（Python）のメインプログラム
 ├── default.conf                # Nginxの設定ファイル
-├── index.html                  # フロントエンドの画面ファイル
+└── index.html                  # フロントエンドの画面ファイル
 ```
 
 
