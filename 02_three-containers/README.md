@@ -15,6 +15,25 @@ Ubuntu 26.04.1 LTS
 
 Docker 29.9.2
 
+## 📁 フォルダ構成 (Directory Structure)
+
+本プロジェクトのファイルおよびディレクトリの配置は以下の通りです。
+
+```text
+.
+├── compose.yaml            # Docker Composeの設定ファイル
+├── nginx/
+│   ├── nginx.conf          # Nginxの設定ファイル
+│   └── html/
+│       └── index.html      # 静的HTMLファイル（フロント画面）
+├── flask/
+│   ├── app.py              # Flask（Python）のメインスクリプト
+│   └── requirements.txt    # Pythonの依存パッケージリスト
+└── mysql/
+    └── init.sql            # データベース初期化用SQL（ある場合）
+```
+
+
 ## システム構成
 
 | コンテナ | 役割 | 使用イメージ |
