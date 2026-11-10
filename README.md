@@ -12,6 +12,7 @@ Dockerの基本操作から始め、Dockerfileによるイメージの作成、D
 
 ### 動作環境
 Ubuntu 26.04.1 
+Docker 29.9.2
 
 ## 学習内容
 
