@@ -15,7 +15,7 @@
 
     <script>
         function getPythonData() {
-            // 3. fetch（フェッチ）の魔法を使って、5000番ポートのPythonをピンポーンと鳴らす
+            // 3. fetch（フェッチ）を使って、5000番ポートのPythonをピンポーンと鳴らす
             fetch('/api/data')
                 .then(response => response.json())
                 .then(data => {
