@@ -157,6 +157,12 @@ FlaskからMySQLへ接続し、`study_db` データベース内のテーブル�
 docker compose exec db-store bash
 ```
 
+
+MySQLにログインする（パスワード：aikio_password）
+```sql
+mysql -u root -p
+```
+
 MySQLへログインした後、データベースを選択します。
 
 ```sql
